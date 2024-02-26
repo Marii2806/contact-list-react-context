@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Context } from "../store/appContext";
 import { Link } from "react-router-dom";
 
-import exampleImage from "../../img/rigo-baby.jpg";
+import ProfilePhoto from "../../img/rigo-baby.jpg";
 
 
 const ContactCard = ({ contact }) => {
@@ -11,11 +11,11 @@ const ContactCard = ({ contact }) => {
 
 	return (
 		<li className="list-group-item">
-			<div className="row w-100 align-items-center">
+			<div className="row w-100">
 				<div className="col-12 col-sm-6 col-md-3 px-0">
 					<img
-						src={exampleImage}
-						alt="user profile icon"
+						src={ProfilePhoto}
+						alt="profile image"
 						width="110"
 						className="rounded-circle mx-auto d-block img-fluid"
 					/>

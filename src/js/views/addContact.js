@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import { Context } from "../store/appContext";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 export const AddContact = () => {
@@ -90,7 +91,7 @@ export const AddContact = () => {
 					{contactData.id ? "Update Contact" : "save"}
 				</button>
 			</form>
-			<a href="/">or get back to contacts</a>
+      <Link className="text-center mt-3 w-100" to="/">or get back to contacts</Link>
 		</div>
 	);
 };

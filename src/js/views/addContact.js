@@ -8,7 +8,7 @@ export const AddContact = () => {
 	const navigate = useNavigate();
 
 	const [ contactData, setContactData ] = useState({
-		agenda_slug: "yjlmotley",
+		agenda_slug: "marii2806",
 	});
 
 	const handleChange = (e) => {

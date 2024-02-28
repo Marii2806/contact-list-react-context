@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Context } from "../store/appContext";
 import { Link } from "react-router-dom";
+import {Modal} from "./Modal"
 
 import ProfilePhoto from "../../img/rigo-baby.jpg";
 
@@ -27,12 +28,10 @@ const ContactCard = ({ contact }) => {
 								<i className="fas fa-pencil-alt mr-3"></i>
 							</button>
 						</Link>
-						<button 
-							className="btn"
-							onClick={() => actions.deleteContacts(contact.id)}
-						>
-							<i className="fas fa-trash-alt"></i>
+						<button type="button" class="btn" data-bs-toggle="modal" data-bs-target={`#Modal${contact.id}`}>
+						<i className="fas fa-trash-alt"></i>
 						</button>
+						<Modal contact={contact}/>
 					</div>
 					<div className="text-start">
 						<label className="name lead fw-bold">{full_name}</label>
